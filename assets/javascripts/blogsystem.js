@@ -1,11 +1,9 @@
 function getLatestBlog(latesDivID) {
-	
 	console.log("Getting latest blog");
 	var element = document.getElementById(latesDivID);
 	
 	$.getJSON("posts.json", function(data) {
 		$.getJSON("posts/" + data.latest + "/post.json", function( post ) {
-			
 				var title = document.createElement("h2");
 				title.innerHTML = " <a href='posts/" + data.latest + "/'>" + post.PostName + "</a>";
 				
@@ -18,12 +16,10 @@ function getLatestBlog(latesDivID) {
 				var des = document.createElement("p");
 				des.innerHTML = " <a href='posts/" + data.latest + "/'>Read More</a>";
 
-				
 				element.appendChild(title);
 				element.appendChild(info);
 				element.appendChild(shortdes);
 				element.appendChild(des);
-			
 		})
 		.fail(function() {
 			console.warn("Error getting post!");
@@ -37,16 +33,13 @@ function getLatestBlog(latesDivID) {
 }
 
 function getAllBlogs(allBlogsDivID) {
-	
 	console.log("Getting all blogs");
 	var element = document.getElementById(allBlogsDivID);
 	
 	$.getJSON("posts.json", function(data) {
 		
 		for(var i=0;i<data.allPosts.length;i++) {
-			
 			$.getJSON("posts/" + data.allPosts[i] + "/post.json", function(post) {
-				
 				var title = document.createElement("h2");
 				title.innerHTML = " <a href='posts/" + data.allPosts[i] + "/'>" + post.PostName + "</a>";
 				
@@ -63,17 +56,13 @@ function getAllBlogs(allBlogsDivID) {
 				element.appendChild(info);
 				element.appendChild(shortdes);
 				element.appendChild(des);
-				
 			})
-			.fail(function() {
-				
+			.fail(function() {				
 				var error = document.createElement("h2");
 				title.innerHTML = "An error occured while getting an post.";
 			
 				element.appendChild(error);
-				
 			});
 		}
-		
-});
+	});
 }
