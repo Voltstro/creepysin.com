@@ -119,15 +119,33 @@
                         <nav class="md-nav md-nav--primary" data-md-level="0">
                            <label class="md-nav__title md-nav__title--site" for="__drawer">
                            <a href="https://creepysin.com" title="Creepysin" class="md-nav__button md-logo">
-                           <img src="../../../../../../assets/images/logo.png" width="48" height="48">
+                           <img src="../assets/images/logo.png" width="48" height="48">
                            </a>
                            Creepysin
                            </label>
                            <ul class="md-nav__list" data-md-scrollfix>
                               <li class="md-nav__item">
-                                 <a href="../../../../../../" title="Home" class="md-nav__link">
+                                 <a href=".." title="Home" class="md-nav__link">
                                  Home
                                  </a>
+                              </li>
+							  <li class="md-nav__item md-nav__item--nested">
+                                 <input class="md-toggle md-nav__toggle" data-md-toggle="nav-2" type="checkbox" id="nav-2">
+                                 <label class="md-nav__link" for="nav-2">
+                                 Blog
+                                 </label>
+                                 <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+                                    <label class="md-nav__title" for="nav-2">
+                                    Blog
+                                    </label>
+                                    <ul class="md-nav__list" data-md-scrollfix>
+                                       <li class="md-nav__item">
+                                          <a href="." title="Blog" class="md-nav__link">
+                                          Blog
+                                          </a>
+                                       </li>
+                                    </ul>
+                                 </nav>
                               </li>
                               <li class="md-nav__item md-nav__item--nested">
                                  <input class="md-toggle md-nav__toggle" data-md-toggle="nav-3" type="checkbox" id="nav-3">
@@ -140,7 +158,7 @@
                                     </label>
                                     <ul class="md-nav__list" data-md-scrollfix>
                                        <li class="md-nav__item">
-                                          <a href="../../../../../../contact" title="Contact" class="md-nav__link">
+                                          <a href="../contact" title="Contact" class="md-nav__link">
                                           Contact
                                           </a>
                                        </li>
@@ -158,7 +176,7 @@
                                     </label>
                                     <ul class="md-nav__list" data-md-scrollfix>
                                        <li class="md-nav__item">
-                                          <a href="../../../../../../about" title="About" class="md-nav__link">
+                                          <a href="../about" title="About" class="md-nav__link">
                                           About
                                           </a>
                                        </li>
@@ -176,12 +194,12 @@
                                     </label>
                                     <ul class="md-nav__list" data-md-scrollfix>
                                        <li class="md-nav__item">
-                                          <a href="../../../../../../projects" title="Projects" class="md-nav__link">
+                                          <a href="../projects" title="Projects" class="md-nav__link">
                                           Projects
                                           </a>
                                        </li>
                                        <li class="md-nav__item">
-                                          <a href="https://pootis-bot.creepysin.com" title="Pootis-Bot" class="md-nav__link">
+                                          <a href="https://pootis-bot.creepysin.com" class="md-nav__link">
                                           Pootis-Bot
                                           </a>
                                        </li>
@@ -210,9 +228,9 @@
 					      <p>So anyway I hope you enjoy the new site update, channel update and this blog system, I hope to release this blog system for other people to use, because remember that this site is hosted from <a href="https://pages.github.com">Github Pages</a> and that it is static website so it is kinda tricky.</p>
 					      <p>So I hope you have a good day, and cya!</p>   
                      <!-- Share Buttons -->
-					      <div id="sharebtns">
+					      <div id="sharebtns"></div>
 						
-                     </div>
+                     
                      <script>setupPage("topinfo", "sharebtns")</script>
                   </article>
                </div>

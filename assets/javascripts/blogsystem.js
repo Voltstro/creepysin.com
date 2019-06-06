@@ -39,9 +39,11 @@ function getAllBlogs(allBlogsDivID) {
 	$.getJSON("posts.json", function(data) {
 		
 		for(var i=0;i<data.allPosts.length;i++) {
+			var postLoc = data.allPosts[i];
+
 			$.getJSON("posts/" + data.allPosts[i] + "/post.json", function(post) {
 				var title = document.createElement("h2");
-				title.innerHTML = " <a href='posts/" + data.allPosts[i] + "/'>" + post.PostName + "</a>";
+				title.innerHTML = " <a href='posts/" + postLoc + "/'>" + post.PostName + "</a>";
 				
 				var info = document.createElement("h4");
 				info.innerHTML = post.PostUploadedDate + " - " + post.PostAuthor;
