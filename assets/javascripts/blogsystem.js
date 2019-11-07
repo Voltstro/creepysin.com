@@ -53,7 +53,7 @@ function getAllBlogs(allBlogsDivID) {
 				shortdes.innerHTML = post.PostShortDes;
 				
 				var des = document.createElement("p");
-				des.innerHTML = " <a href='posts/" + data.latest + "/'>Read More</a>";
+				des.innerHTML = " <a href='posts/" + post.PostLocation + "/'>Read More</a>";
 
 				element.appendChild(title);
 				element.appendChild(info);
