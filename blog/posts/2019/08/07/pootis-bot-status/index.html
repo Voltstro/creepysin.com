@@ -1,267 +1,301 @@
 <!doctype html>
 <html lang="en" class="no-js">
-   <head>
-      <meta charset="utf-8">
-      <meta name="viewport" content="width=device-width,initial-scale=1">
-      <meta http-equiv="x-ua-compatible" content="ie=edge">
-      <meta name="description" content="The site of Creepysin!">
-      <link rel="canonical" href="https://creepysin.com/blog/">
-      <meta name="author" content="Creepysin">
-      <meta name="lang:clipboard.copy" content="Copy to clipboard">
-      <meta name="lang:clipboard.copied" content="Copied to clipboard">
-      <link rel="shortcut icon" href="../../../../../../assets/images/favicon.ico">
-      <meta name="generator" content="mkdocs-1.0.4, mkdocs-material-4.1.1">
-      <title>Blog - Creepysin</title>
-      <link rel="stylesheet" href="../../../../../../assets/stylesheets/application.3020aac5.css">
-      <link rel="stylesheet" href="../../../../../../assets/stylesheets/application-palette.224b79ff.css">
-	   <link rel="stylesheet" href="../../../../../../assets/stylesheets/blog.css">
-      <meta name="theme-color" content="#03a9f4">
-      <script src="../../../../../../assets/javascripts/modernizr.01ccdecf.js"></script>
-	   <script src="../../../../../../assets/javascripts/jquery-3.4.1.min.js"></script>
-      <script src="../../../../../../assets/javascripts/post.js"></script>
-      <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
-      <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700|Roboto+Mono">
-      <style>body,input{font-family:"Roboto","Helvetica Neue",Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono","Courier New",Courier,monospace}</style>
-      <link rel="stylesheet" href="../../../../../../assets/fonts/material-icons.css">
-      <script>
-         window.ga = window.ga || function() {
-           (ga.q = ga.q || []).push(arguments)
-         }
-         ga.l = +new Date
-         /* Setup integration and send page view */
-         ga("create", "UA-139994195-1", "auto")
-         ga("set", "anonymizeIp", true)
-         ga("send", "pageview")
-         /* Register handler to log search on blur */
-         document.addEventListener("DOMContentLoaded", () => {
-           if (document.forms.search) {
-             var query = document.forms.search.query
-             query.addEventListener("blur", function() {
+
+<head>
+   <meta charset="utf-8">
+   <meta name="viewport" content="width=device-width,initial-scale=1">
+   <meta http-equiv="x-ua-compatible" content="ie=edge">
+   <meta name="description" content="The site of Creepysin!">
+   <link rel="canonical" href="https://creepysin.com/blog/">
+   <meta name="author" content="Creepysin">
+   <meta name="lang:clipboard.copy" content="Copy to clipboard">
+   <meta name="lang:clipboard.copied" content="Copied to clipboard">
+   <link rel="shortcut icon" href="../../../../../../assets/images/favicon.ico">
+   <meta name="generator" content="mkdocs-1.0.4, mkdocs-material-4.1.1">
+   <title>Blog - Creepysin</title>
+   <link rel="stylesheet" href="../../../../../../assets/stylesheets/application.3020aac5.css">
+   <link rel="stylesheet" href="../../../../../../assets/stylesheets/application-palette.224b79ff.css">
+   <link rel="stylesheet" href="../../../../../../assets/stylesheets/blog.css">
+   <meta name="theme-color" content="#03a9f4">
+   <script src="../../../../../../assets/javascripts/modernizr.01ccdecf.js"></script>
+   <script src="../../../../../../assets/javascripts/jquery-3.4.1.min.js"></script>
+   <script src="../../../../../../assets/javascripts/post.js"></script>
+   <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700|Roboto+Mono">
+   <style>
+      body,
+      input {
+         font-family: "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif
+      }
+
+      code,
+      kbd,
+      pre {
+         font-family: "Roboto Mono", "Courier New", Courier, monospace
+      }
+   </style>
+   <link rel="stylesheet" href="../../../../../../assets/fonts/material-icons.css">
+   <script>
+      window.ga = window.ga || function () {
+         (ga.q = ga.q || []).push(arguments)
+      }
+      ga.l = +new Date
+      /* Setup integration and send page view */
+      ga("create", "UA-139994195-1", "auto")
+      ga("set", "anonymizeIp", true)
+      ga("send", "pageview")
+      /* Register handler to log search on blur */
+      document.addEventListener("DOMContentLoaded", () => {
+         if (document.forms.search) {
+            var query = document.forms.search.query
+            query.addEventListener("blur", function () {
                if (this.value) {
-                 var path = document.location.pathname;
-                 ga("send", "pageview", path + "?q=" + this.value)
+                  var path = document.location.pathname;
+                  ga("send", "pageview", path + "?q=" + this.value)
                }
-             })
-           }
-         })
-      </script>
-      <script async src="https://www.google-analytics.com/analytics.js"></script>
-   </head>
-   <body dir="ltr" data-md-color-primary="light-blue" data-md-color-accent="blue">
-      <svg class="md-svg">
-         <defs>
-         </defs>
-      </svg>
-      <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
-      <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
-      <label class="md-overlay" data-md-component="overlay" for="__drawer"></label>
-      <header class="md-header" data-md-component="header">
-         <nav class="md-header-nav md-grid">
-            <div class="md-flex">
-               <div class="md-flex__cell md-flex__cell--shrink">
-                  <a href="https://creepysin.com" title="Creepysin" class="md-header-nav__button md-logo">
-                  <img src="../../../../../../assets/images/logo.png" width="24" height="24">
-                  </a>
-               </div>
-               <div class="md-flex__cell md-flex__cell--shrink">
-                  <label class="md-icon md-icon--menu md-header-nav__button" for="__drawer"></label>
-               </div>
-               <div class="md-flex__cell md-flex__cell--stretch">
-                  <div class="md-flex__ellipsis md-header-nav__title" data-md-component="title">
-                     <span class="md-header-nav__topic">
+            })
+         }
+      })
+   </script>
+   <script async src="https://www.google-analytics.com/analytics.js"></script>
+</head>
+
+<body dir="ltr" data-md-color-primary="light-blue" data-md-color-accent="blue">
+   <svg class="md-svg">
+      <defs>
+      </defs>
+   </svg>
+   <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+   <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+   <label class="md-overlay" data-md-component="overlay" for="__drawer"></label>
+   <header class="md-header" data-md-component="header">
+      <nav class="md-header-nav md-grid">
+         <div class="md-flex">
+            <div class="md-flex__cell md-flex__cell--shrink">
+               <a href="https://creepysin.com" title="Creepysin" class="md-header-nav__button md-logo">
+                  <img src="../../../../../../assets/images/logo.jpg" width="24" height="24">
+               </a>
+            </div>
+            <div class="md-flex__cell md-flex__cell--shrink">
+               <label class="md-icon md-icon--menu md-header-nav__button" for="__drawer"></label>
+            </div>
+            <div class="md-flex__cell md-flex__cell--stretch">
+               <div class="md-flex__ellipsis md-header-nav__title" data-md-component="title">
+                  <span class="md-header-nav__topic">
                      Creepysin
-                     </span>
-                     <span class="md-header-nav__topic">
+                  </span>
+                  <span class="md-header-nav__topic">
                      Blog
-                     </span>
-                  </div>
+                  </span>
                </div>
             </div>
-         </nav>
-      </header>
-      <div class="md-container">
-         <nav class="md-tabs md-tabs--active" data-md-component="tabs">
-            <div class="md-tabs__inner md-grid">
-               <ul class="md-tabs__list">
-                  <li class="md-tabs__item">
-                     <a href="../../../../../../" title="Home" class="md-tabs__link">
+         </div>
+      </nav>
+   </header>
+   <div class="md-container">
+      <nav class="md-tabs md-tabs--active" data-md-component="tabs">
+         <div class="md-tabs__inner md-grid">
+            <ul class="md-tabs__list">
+               <li class="md-tabs__item">
+                  <a href="../../../../../../" title="Home" class="md-tabs__link">
                      Home
-                     </a>
-                  </li>
-                  <li class="md-tabs__item">
-                     <a href="../../../../../" title="Blog" class="md-tabs__link md-tabs__link--active">
+                  </a>
+               </li>
+               <li class="md-tabs__item">
+                  <a href="../../../../../" title="Blog" class="md-tabs__link md-tabs__link--active">
                      Blog
-                     </a>
-                  </li>
-                  <li class="md-tabs__item">
-                     <a href="../../../../../../contact" title="Contact" class="md-tabs__link">
+                  </a>
+               </li>
+               <li class="md-tabs__item">
+                  <a href="../../../../../../contact" title="Contact" class="md-tabs__link">
                      Contact
-                     </a>
-                  </li>
-                  <li class="md-tabs__item">
-                     <a href="../../../../../../about" title="About" class="md-tabs__link">
+                  </a>
+               </li>
+               <li class="md-tabs__item">
+                  <a href="../../../../../../about" title="About" class="md-tabs__link">
                      About
-                     </a>
-                  </li>
-                  <li class="md-tabs__item">
-                     <a href="../../../../../../projects" title="Projects" class="md-tabs__link">
+                  </a>
+               </li>
+               <li class="md-tabs__item">
+                  <a href="../../../../../../projects" title="Projects" class="md-tabs__link">
                      Projects
-                     </a>
-                  </li>
-               </ul>
-            </div>
-         </nav>
-         <main class="md-main">
-            <div class="md-main__inner md-grid" data-md-component="container">
-               <div class="md-sidebar md-sidebar--primary" data-md-component="navigation">
-                  <div class="md-sidebar__scrollwrap">
-                     <div class="md-sidebar__inner">
-                        <nav class="md-nav md-nav--primary" data-md-level="0">
-                           <label class="md-nav__title md-nav__title--site" for="__drawer">
+                  </a>
+               </li>
+            </ul>
+         </div>
+      </nav>
+      <main class="md-main">
+         <div class="md-main__inner md-grid" data-md-component="container">
+            <div class="md-sidebar md-sidebar--primary" data-md-component="navigation">
+               <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                     <nav class="md-nav md-nav--primary" data-md-level="0">
+                        <label class="md-nav__title md-nav__title--site" for="__drawer">
                            <a href="https://creepysin.com" title="Creepysin" class="md-nav__button md-logo">
-                           <img src="../../../../../../assets/images/logo.png" width="48" height="48">
+                              <img src="../../../../../../assets/images/logo.jpg" width="48" height="48">
                            </a>
                            Creepysin
-                           </label>
-                           <ul class="md-nav__list" data-md-scrollfix>
-                              <li class="md-nav__item">
-                                 <a href="../../../../../../.." title="Home" class="md-nav__link">
+                        </label>
+                        <ul class="md-nav__list" data-md-scrollfix>
+                           <li class="md-nav__item">
+                              <a href="../../../../../../.." title="Home" class="md-nav__link">
                                  Home
-                                 </a>
-                              </li>
-							  <li class="md-nav__item md-nav__item--nested">
-                                 <input class="md-toggle md-nav__toggle" data-md-toggle="nav-2" type="checkbox" id="nav-2">
-                                 <label class="md-nav__link" for="nav-2">
+                              </a>
+                           </li>
+                           <li class="md-nav__item md-nav__item--nested">
+                              <input class="md-toggle md-nav__toggle" data-md-toggle="nav-2" type="checkbox" id="nav-2">
+                              <label class="md-nav__link" for="nav-2">
                                  Blog
-                                 </label>
-                                 <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
-                                    <label class="md-nav__title" for="nav-2">
+                              </label>
+                              <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+                                 <label class="md-nav__title" for="nav-2">
                                     Blog
-                                    </label>
-                                    <ul class="md-nav__list" data-md-scrollfix>
-                                       <li class="md-nav__item">
-                                          <a href="../../../../../../blog/" title="Blog" class="md-nav__link">
+                                 </label>
+                                 <ul class="md-nav__list" data-md-scrollfix>
+                                    <li class="md-nav__item">
+                                       <a href="../../../../../../blog/" title="Blog" class="md-nav__link">
                                           Blog
-                                          </a>
-                                       </li>
-                                    </ul>
-                                 </nav>
-                              </li>
-                              <li class="md-nav__item md-nav__item--nested">
-                                 <input class="md-toggle md-nav__toggle" data-md-toggle="nav-3" type="checkbox" id="nav-3">
-                                 <label class="md-nav__link" for="nav-3">
+                                       </a>
+                                    </li>
+                                 </ul>
+                              </nav>
+                           </li>
+                           <li class="md-nav__item md-nav__item--nested">
+                              <input class="md-toggle md-nav__toggle" data-md-toggle="nav-3" type="checkbox" id="nav-3">
+                              <label class="md-nav__link" for="nav-3">
                                  Contact
-                                 </label>
-                                 <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
-                                    <label class="md-nav__title" for="nav-3">
+                              </label>
+                              <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+                                 <label class="md-nav__title" for="nav-3">
                                     Contact
-                                    </label>
-                                    <ul class="md-nav__list" data-md-scrollfix>
-                                       <li class="md-nav__item">
-                                          <a href="../../../../../../contact" title="Contact" class="md-nav__link">
+                                 </label>
+                                 <ul class="md-nav__list" data-md-scrollfix>
+                                    <li class="md-nav__item">
+                                       <a href="../../../../../../contact" title="Contact" class="md-nav__link">
                                           Contact
-                                          </a>
-                                       </li>
-                                    </ul>
-                                 </nav>
-                              </li>
-                              <li class="md-nav__item md-nav__item--nested">
-                                 <input class="md-toggle md-nav__toggle" data-md-toggle="nav-4" type="checkbox" id="nav-4">
-                                 <label class="md-nav__link" for="nav-4">
+                                       </a>
+                                    </li>
+                                 </ul>
+                              </nav>
+                           </li>
+                           <li class="md-nav__item md-nav__item--nested">
+                              <input class="md-toggle md-nav__toggle" data-md-toggle="nav-4" type="checkbox" id="nav-4">
+                              <label class="md-nav__link" for="nav-4">
                                  About
-                                 </label>
-                                 <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
-                                    <label class="md-nav__title" for="nav-4">
+                              </label>
+                              <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+                                 <label class="md-nav__title" for="nav-4">
                                     About
-                                    </label>
-                                    <ul class="md-nav__list" data-md-scrollfix>
-                                       <li class="md-nav__item">
-                                          <a href="../../../../../../about" title="About" class="md-nav__link">
-                                          About
-                                          </a>
-                                       </li>
-                                    </ul>
-                                 </nav>
-                              </li>
-                              <li class="md-nav__item md-nav__item--nested">
-                                 <input class="md-toggle md-nav__toggle" data-md-toggle="nav-5" type="checkbox" id="nav-5">
-                                 <label class="md-nav__link" for="nav-5">
-                                 Projects
                                  </label>
-                                 <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
-                                    <label class="md-nav__title" for="nav-5">
+                                 <ul class="md-nav__list" data-md-scrollfix>
+                                    <li class="md-nav__item">
+                                       <a href="../../../../../../about" title="About" class="md-nav__link">
+                                          About
+                                       </a>
+                                    </li>
+                                 </ul>
+                              </nav>
+                           </li>
+                           <li class="md-nav__item md-nav__item--nested">
+                              <input class="md-toggle md-nav__toggle" data-md-toggle="nav-5" type="checkbox" id="nav-5">
+                              <label class="md-nav__link" for="nav-5">
+                                 Projects
+                              </label>
+                              <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+                                 <label class="md-nav__title" for="nav-5">
                                     Projects
-                                    </label>
-                                    <ul class="md-nav__list" data-md-scrollfix>
-                                       <li class="md-nav__item">
-                                          <a href="../../../../../../projects" title="Projects" class="md-nav__link">
+                                 </label>
+                                 <ul class="md-nav__list" data-md-scrollfix>
+                                    <li class="md-nav__item">
+                                       <a href="../../../../../../projects" title="Projects" class="md-nav__link">
                                           Projects
-                                          </a>
-                                       </li>
-                                       <li class="md-nav__item">
-                                          <a href="https://pootis-bot.creepysin.com" class="md-nav__link">
+                                       </a>
+                                    </li>
+                                    <li class="md-nav__item">
+                                       <a href="https://pootis-bot.creepysin.com" class="md-nav__link">
                                           Pootis-Bot
-                                          </a>
-                                       </li>
-                                    </ul>
-                                 </nav>
-                              </li>
-                           </ul>
-                        </nav>	
-				      </div>
-               </div>
-               </div>
-               <div class="md-content">
-                  <article class="md-content__inner md-typeset">
-                     <h1><a href="../../../../../">Back</a></h1>
-					      <h2>Pootis-Bot Status</h2>
-					      <p id="topinfo"> </p>
-                     <!-- Post -->
-                     <p>Hello everyone it has been awhile since I have posted, but I am here to give an update on <a href="https://pootis-bot.creepysin.com">Pootis-Bot</a> and some other stuff as well.</p>  
-                     <img src="img/Pootis-Bot.jpg" alt="Pootis-Bot">
-                     <p>What I really want to do with Pootis-Bot is to have it <strong>released</strong> by the end of this year! Now I can't exactly tell when, as still I have no idea either, but still it is nearing completion.</p>
-                     <p>Now about the audio services.</p>
-                     <p>This part of Pootis-Bot has always been a challenge for me, this sort of stuff isn't what I am good at. I originally wanted Pootis-Bot to run on all platforms (Windows, Linux, MacOS) but getting it to run on all three platforms has been hard. So I have made the decision that Pootis-Bot audio service will only work on Windows. Now this won't effect the rest of Pootis-Bot at all, just the audio services.</p>
-                     <p>Now the audio service could be made to run on Linux and MacOS, but I just don't have the time and I don't have a Mac to test audio services on MacOS.</p>
-
-                     <p>All right now updates on some other stuff.</p>
-                     <p>Why haven't I been active? Simple, its call school and there have been some shit ass assessments and exams. But that is not the only reason why I haven't been active, I have also been working on some personal projects.</p>
-                     <p>Now for YouTube updates... <strong>THANK YOU FOR 100 SUBSCRIBERS!</strong> I never would have expect to hit that number of subs, I created Creepysin just for fun. Now I know 100 isn't a big number, especially now days YouTube, but still thats big for me, so thank you again!</p>
-
-                     <p>So yea, thats it, I hope you have a good day and goodbye!</p>
-
-                     <!-- Share Buttons -->
-					      <div id="sharebtns"></div>
-                     <script>setupPage("topinfo", "sharebtns")</script>
-
-                  </article>
+                                       </a>
+                                    </li>
+                                    <li class="md-nav__item">
+                                       <a href="https://wikinet.studios.creepysin.com/" title="Wiki.NET" class="md-nav__link">
+                                          Wiki.NET
+                                       </a>
+                                    </li>
+                                 </ul>
+                              </nav>
+                           </li>
+                        </ul>
+                     </nav>
+                  </div>
                </div>
             </div>
-         </main>
-         <footer class="md-footer">
-            <div class="md-footer-nav">
+            <div class="md-content">
+               <article class="md-content__inner md-typeset">
+                  <h1><a href="../../../../../">Back</a></h1>
+                  <h2>Pootis-Bot Status</h2>
+                  <p id="topinfo"> </p>
+                  <!-- Post -->
+                  <p>Hello everyone it has been awhile since I have posted, but I am here to give an update on <a
+                        href="https://pootis-bot.creepysin.com">Pootis-Bot</a> and some other stuff as well.</p>
+                  <img src="img/Pootis-Bot.jpg" alt="Pootis-Bot">
+                  <p>What I really want to do with Pootis-Bot is to have it <strong>released</strong> by the end of this
+                     year! Now I can't exactly tell when, as still I have no idea either, but still it is nearing
+                     completion.</p>
+                  <p>Now about the audio services.</p>
+                  <p>This part of Pootis-Bot has always been a challenge for me, this sort of stuff isn't what I am good
+                     at. I originally wanted Pootis-Bot to run on all platforms (Windows, Linux, MacOS) but getting it
+                     to run on all three platforms has been hard. So I have made the decision that Pootis-Bot audio
+                     service will only work on Windows. Now this won't effect the rest of Pootis-Bot at all, just the
+                     audio services.</p>
+                  <p>Now the audio service could be made to run on Linux and MacOS, but I just don't have the time and I
+                     don't have a Mac to test audio services on MacOS.</p>
+
+                  <p>All right now updates on some other stuff.</p>
+                  <p>Why haven't I been active? Simple, its call school and there have been some shit ass assessments
+                     and exams. But that is not the only reason why I haven't been active, I have also been working on
+                     some personal projects.</p>
+                  <p>Now for YouTube updates... <strong>THANK YOU FOR 100 SUBSCRIBERS!</strong> I never would have
+                     expect to hit that number of subs, I created Creepysin just for fun. Now I know 100 isn't a big
+                     number, especially now days YouTube, but still thats big for me, so thank you again!</p>
+
+                  <p>So yea, thats it, I hope you have a good day and goodbye!</p>
+
+                  <!-- Share Buttons -->
+                  <div id="sharebtns"></div>
+                  <script>
+                     setupPage("topinfo", "sharebtns")
+                  </script>
+
+               </article>
             </div>
-            <div class="md-footer-meta md-typeset">
-               <div class="md-footer-meta__inner md-grid">
-                  <div class="md-footer-copyright">
-                     <div class="md-footer-copyright__highlight">
-                        Copyright &copy; 2019 Creepysin
-                     </div>
-                     powered by
-                     <a href="https://www.mkdocs.org">MkDocs</a>
-                     and
-                     <a href="https://squidfunk.github.io/mkdocs-material/">
+         </div>
+      </main>
+      <footer class="md-footer">
+         <div class="md-footer-nav">
+         </div>
+         <div class="md-footer-meta md-typeset">
+            <div class="md-footer-meta__inner md-grid">
+               <div class="md-footer-copyright">
+                  <div class="md-footer-copyright__highlight">
+                     Copyright &copy; 2019 Creepysin
+                  </div>
+                  powered by
+                  <a href="https://www.mkdocs.org">MkDocs</a>
+                  and
+                  <a href="https://squidfunk.github.io/mkdocs-material/">
                      Material for MkDocs</a>
-                  </div>
-                  <div class="md-footer-social">
-                     <link rel="stylesheet" href="../../../../../../assets/fonts/font-awesome.css">
-                     <a href="https://github.com/Creepysin" class="md-footer-social__link fa fa-github"></a>
-                     <a href="https://www.youtube.com/channel/UCGE1RiKvxmhB1mEVzJS0MtA" class="md-footer-social__link fa fa-youtube"></a>
-                     <a href="https://steamcommunity.com/groups/creepysin" class="md-footer-social__link fa fa-steam"></a>
-                  </div>
+               </div>
+               <div class="md-footer-social">
+                  <link rel="stylesheet" href="../../../../../../assets/fonts/font-awesome.css">
+                  <a href="https://github.com/Creepysin" class="md-footer-social__link fa fa-github"></a>
+                  <a href="https://www.youtube.com/channel/UCGE1RiKvxmhB1mEVzJS0MtA"
+                     class="md-footer-social__link fa fa-youtube"></a>
+                  <a href="https://steamcommunity.com/groups/creepysin" class="md-footer-social__link fa fa-steam"></a>
                </div>
             </div>
-         </footer>
-      </div>
-   </body>
+         </div>
+      </footer>
+   </div>
+</body>
+
 </html>
